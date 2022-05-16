@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Style.css" media="screen">
+    <title>Calculadora de combustivel</title>
+</head>
+<body>
+    <form name="calculator">
+    <fieldset>
+        <p id="titulo"><strong>Insira os valores:</strong></p> 
+        <br>
+        <div>
+            <label for="Gasolina">Gasolina</label>
+            <input type="number" name="Valorgasolina" id="Valorgasolina">
+        </div>
+        <div>
+            <label for="Álcool">Álcool</label>
+            <input type="number" name="Valoralcool" id="Valoralcool">
+        </div>
+        <div>
+            <button onclick="calc(Valorgasolina.value,Valoralcool.value)" class="botao" type="submit" onsubmit="">Calcular</button>                        
+        </div> 
+    </fieldset>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
